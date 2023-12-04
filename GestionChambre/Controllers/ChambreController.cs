@@ -1,6 +1,7 @@
 ﻿using GestionChambre.Data;
 using GestionChambre.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace GestionChambre.Controllers
 {
@@ -8,7 +9,7 @@ namespace GestionChambre.Controllers
     {
      
         private static List<Chambre> chambres = ChambreRepo.GetChambres();
-        private static int Id = 2;
+        private static int Id = 6;
        
         public IActionResult Index()
         {
@@ -20,8 +21,8 @@ namespace GestionChambre.Controllers
         [HttpGet]
         public IActionResult Ajouter() {
             Chambre chambre = new Chambre();
-            chambre.Numero=Id;
-
+            chambre.Numero=Id++;
+           
             return View(chambre);
         }
 
@@ -31,6 +32,8 @@ namespace GestionChambre.Controllers
         public IActionResult Ajouter(Chambre chambre)
         {
             chambres.Add(chambre);
+            
+            
 
             return RedirectToAction("Index");
         }
@@ -63,8 +66,8 @@ namespace GestionChambre.Controllers
 
         public IActionResult ChambresDeuxiemeEtage()
         {
-            var chambresDeuxiemeEtage = chambres.Where(c => c.Numero_etage == 2).ToList();
-            return View(chambresDeuxiemeEtage);
+            ViewBag.chde = chambres.FindAll(ch => ch.Numero_etage == 2);
+            return View();
         }
 
     }

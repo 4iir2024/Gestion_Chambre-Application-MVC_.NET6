@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "koJ/1AwuO201Hp8sDoVue7fxqBnmEuD2bShxfKJxGBM=",
+  "Hash": "zyzugwYiTHEufJDO3RlizqEYiUoQP9q/xDZnywTdHdM=",
   "Source": "GestionChambre",
   "BasePath": "_content/GestionChambre",
   "Mode": "Default",
@@ -1193,6 +1193,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\Computer\\Desktop\\Project .NET\\GestionChambre\\GestionChambre\\wwwroot\\logo.jpg",
+      "SourceId": "GestionChambre",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Computer\\Desktop\\Project .NET\\GestionChambre\\GestionChambre\\wwwroot\\",
+      "BasePath": "_content/GestionChambre",
+      "RelativePath": "logo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.jpg"
     }
   ]
 }
